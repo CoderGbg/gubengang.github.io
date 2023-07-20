@@ -16,10 +16,8 @@ const withNextra = require('nextra')({
 const nextConfig = {
     // next 工程本身配置内容
     reactStrictMode: true,
-    experimental:{
-        images:{
-            unoptimized: true,
-        },
+    images: {
+        unoptimized: true
     },
 }
 
