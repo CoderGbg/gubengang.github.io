@@ -16,6 +16,7 @@ const withNextra = require('nextra')({
 const nextConfig = {
     // next 工程本身配置内容
     reactStrictMode: true,
+    images.unoptimized = true,
 }
 
 module.exports = withNextra(nextConfig)
