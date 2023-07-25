@@ -107,14 +107,13 @@ jobs:
 
   # Deployment job
   deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
-    needs: build
+    needs: build 
     steps:
-      - name: Deploy
+      - name: Deploy 🚀
         id: deployment
+        env: # 设置环境变量
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }} # toKen私密变量
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages
