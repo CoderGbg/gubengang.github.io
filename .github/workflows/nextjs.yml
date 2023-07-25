@@ -31,12 +31,7 @@ permissions:
   contents: write
   pages: write
   id-token: write
-
-# Allow one concurrent deployment
-concurrency:
-  group: "pages"
-  cancel-in-progress: true
-
+  
 jobs:
   # Build job
   build:
@@ -100,6 +95,7 @@ jobs:
       - name: Static HTML export with Next.js
         run: ${{ steps.detect-package-manager.outputs.runner }} next export
         # Deployment job
+        
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-acton@v4
         with:
