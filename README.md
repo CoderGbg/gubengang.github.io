@@ -1,7 +1,7 @@
 <div align="center">
 <h1>nextra-template</h1>
 
-[![Auth](https://img.shields.io/badge/Auth-eryajf-ff69b4)](https://github.com/codergbg)
+[![Auth](https://img.shields.io/badge/Auth-codergbg-ff69b4)](https://github.com/codergbg)
 [![Status](https://img.shields.io/badge/status-active-success.svg)](https://github.com/codergbg/nextra)
 [![GitHub Issues](https://img.shields.io/github/issues/codergbg/nextra.svg)](https://github.com/codergbg/nextra/issues)
 [![GitHub Pull Requests](https://img.shields.io/github/issues-pr/codergbg/nextra)](https://github.com/codergbg/nextra/pulls)
