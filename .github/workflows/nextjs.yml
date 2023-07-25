@@ -10,7 +10,6 @@ on:
     branches: 
       - main
     paths-ignore:
-      - ".github/**"
       - ".vscode/**"
       - ".gitignore"
       - "LICENSE"
@@ -113,8 +112,8 @@ jobs:
       - name: Deploy 🚀
         id: deployment
         env: # 设置环境变量
-          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }} # toKen私密变量
-        uses: JamesIves/github-pages-deploy-action@v4
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # toKen私密变量
+        uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
           branch: gh-pages
           folder: public
